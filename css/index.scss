@@ -261,3 +261,11 @@ footer hr {
     height: 60px;
   }
 }
+
+@media (max-width: 400px){
+  #summary{
+    h2{
+      font-size: 30px;
+    }
+  }
+}
