@@ -1,0 +1,263 @@
+/* Theme Global */
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+h3.section-title {
+  margin-bottom: 50px;
+  font-size: 23px;
+  color: #3255a8;
+}
+
+.btn-primary {
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #4170dc;
+  border: 1px solid #4170dc;
+  padding: 7px 8px 7px 8px;
+  border-radius: 2px;
+  transition: .15s;
+}
+
+/* Header */
+
+header {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url('../img/header.jpg');
+  svg {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 100px;
+    polygon {
+      fill: url(#grad);
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #00184b, #3255a8);
+    opacity: .8;
+  }
+  .container {
+    max-width: 800px;
+  }
+}
+
+.nav-link {
+  transition: .3s;
+  color: #ffffff !important;
+  &:hover {
+    color: #ffffffb3 !important;
+  }
+}
+
+.navbar-brand {
+  font-size: 35px;
+}
+
+#summary {
+  h2 {
+    font-size: 40px;
+    color: #ffffff;
+    max-width: 500px;
+  }
+  p {
+    color: #ffffff;
+  }
+}
+
+#showcase {
+  .card {
+    background-color: #fefefe;
+    border-radius: 3px;
+    box-shadow: 1px 1px 15px #33333365;
+    transition: .4s;
+    &:hover {
+      box-shadow: 1px 3px 35px #3333338e;
+    }
+  }
+  .card-title {
+    font-size: 18px;
+    color: #4170dc;
+  }
+  .card-text {
+    padding: 5px;
+    font-size: 13.5px;
+    margin-bottom: 25px;
+  }
+}
+
+/* Portfolio */
+
+#portfolio .section-title {
+  padding: 90px 0 20px;
+}
+
+.portfolio-img {
+  width: 100%;
+  filter: saturate(90%);
+}
+
+/* Contact */
+
+#contact .container {
+  min-height: 500px;
+  max-width: 600px;
+}
+
+#contact-form {
+  input, textarea, button[type="Submit"] {
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid #4170dc;
+    padding: 7px 8px 7px 8px;
+    border-radius: 2px;
+    transition: .4s;
+    outline: 0 none;
+  }
+  input:focus, textarea:focus {
+    color: #4170dc;
+    box-shadow: 1px 1px 25px #33333360;
+  }
+  button[type="Submit"] {
+    padding: 11px 18px 11px 18px;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url('../img/footer.jpg');
+  color: #ffffff;
+  h4 {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #00184b, #3255a8);
+    opacity: .8;
+  }
+  svg {
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    height: 100px;
+    polygon {
+      fill: #ffffff;
+    }
+  }
+  .container {
+    padding-top: 120px;
+  }
+}
+
+#summary {
+  max-width: 500px;
+  margin: auto;
+}
+
+#contact-info {
+  list-style-type: none;
+}
+
+#social-medias {
+  list-style-type: none;
+  li {
+    display: inline;
+    a {
+      color: #ffffff;
+    }
+  }
+}
+
+footer hr {
+  border: 0.2px solid #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    background-image: 100% auto;
+    padding-bottom: 90px;
+    svg {
+      height: 80px;
+    }
+  }
+  #showcase {
+    .container {
+      width: 100%;
+    }
+    .card {
+      padding: 20px 0 20px 0;
+      margin: 0;
+      width: 100%;
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      &:hover {
+        padding: 20px 0 20px 0;
+        margin: 0;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+      }
+    }
+    .card-img-top {
+      width: 50%;
+      margin: auto;
+    }
+    .card-body a {
+      display: none;
+    }
+    .container > .row > .col-sm-12 {
+      &:last-child > .card {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+      &:first-child > .card {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+      }
+    }
+  }
+  #portfolio {
+    .container {
+      margin-top: -50px;
+    }
+    .section-title {
+      padding: 0px;
+    }
+  }
+  .navbar-brand {
+    font-weight: bold;
+    span {
+      display: none;
+    }
+  }
+  footer svg {
+    height: 60px;
+  }
+}
