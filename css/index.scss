@@ -62,7 +62,8 @@ header {
 }
 
 .navbar-brand {
-  font-size: 35px;
+  font-size: 33px;
+  font-weight: bold;
 }
 
 #summary {
@@ -251,11 +252,8 @@ footer hr {
       padding: 0px;
     }
   }
-  .navbar-brand {
-    font-weight: bold;
-    span {
-      display: none;
-    }
+  .navbar-brand{
+    font-size: 23px;
   }
   footer svg {
     height: 60px;
